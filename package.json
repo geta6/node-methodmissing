@@ -1,0 +1,23 @@
+{
+  "name": "methodmissing",
+  "version": "0.0.1",
+  "description": "create method missing captureable object",
+  "main": "lib/methodmissing.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geta6/node-methodmissing"
+  },
+  "keywords": [
+    "method",
+    "missing"
+  ],
+  "dependencies": {
+    "node-proxy": "*"
+  },
+  "author": "geta6",
+  "license": "MIT",
+  "readme": "http://geta6.github.io/node-methodmissing/",
+  "bugs": {
+    "url": "https://github.com/geta6/node-methodmissing/issues"
+  }
+}
