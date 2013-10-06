@@ -34,21 +34,15 @@ mmfs.existsSync('.');  // true
 mmfs.existSync('.');   // missing
 ```
 
-options
--------
+mm(object, callback)
+--------------------
 
-```javascript
-mm = require('methodmissing');
-```
+#### object [ string | object ]
 
-### mm(object, callback)
+* `string`: returns required object inherited method missing
+* `object`: returns object inherited method missing
 
-#### object [string|object]
-
-* passed `string`, returns required object inherited method missing
-* passed `object`, returns object inherited method missing
-
-#### callback [function(key, arg){}]
+#### callback [ function (key, arg) ]
 
 * called on missing method called
 
