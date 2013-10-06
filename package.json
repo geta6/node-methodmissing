@@ -16,7 +16,6 @@
   },
   "author": "geta6",
   "license": "MIT",
-  "readme": "http://geta6.github.io/node-methodmissing/",
   "bugs": {
     "url": "https://github.com/geta6/node-methodmissing/issues"
   }

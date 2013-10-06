@@ -3,6 +3,13 @@ node-methodmissing
 
 capture method missing in node.js
 
+install
+-------
+
+```
+npm i methodmissing
+```
+
 usage
 -----
 
