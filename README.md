@@ -45,10 +45,8 @@ mm = require('methodmissing');
 
 #### object [string|object]
 
-* on type of `string`
-  * returns required object inherited method missing
-* on type of `object`
-  * returns object inherited method missing
+* passed `string`, returns required object inherited method missing
+* passed `object`, returns object inherited method missing
 
 #### callback [function(key, arg){}]
 
