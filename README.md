@@ -13,16 +13,6 @@ npm i methodmissing
 usage
 -----
 
-### require with method missing
-
-```javascript
-mm = require('methodmissing');
-fs = mm('fs');
-
-fs.existsSync('.');  // true
-fs.existSync('.');   // missing
-```
-
 ### inherits method missing
 
 ```javascript
@@ -32,6 +22,16 @@ mmfs = mm(fs);
 
 mmfs.existsSync('.');  // true
 mmfs.existSync('.');   // missing
+```
+
+### require with method missing
+
+```javascript
+mm = require('methodmissing');
+fs = mm('fs');
+
+fs.existsSync('.');  // true
+fs.existSync('.');   // missing
 ```
 
 mm(object, callback)
