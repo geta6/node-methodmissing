@@ -5,13 +5,12 @@ module.exports = (obj, callback = ->) ->
   property = obj || {}
   handlers =
     get: (rec, key) ->
-      return ->
-        if key in property
-          if Object::toString.call(property[key]) is '[object Function]'
-            return property[key].apply null, arguments
-          return property[key]
-        else
-          return callback key, arguments
+      if property[key]?
+        if Object::toString.call(property[key]) is '[object Function]'
+          return -> property[key].apply null, arguments
+        return property[key]
+      else
+        return -> callback key, arguments
     set: (rec, key, val) ->
       property[key] = val
   Proxy.createFunction handlers, ->
