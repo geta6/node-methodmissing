@@ -6,7 +6,7 @@ module.exports = (obj, callback = ->) ->
   handlers =
     get: (rec, key) ->
       return ->
-        if property[key]?
+        if key in property
           if Object::toString.call(property[key]) is '[object Function]'
             return property[key].apply null, arguments
           return property[key]
